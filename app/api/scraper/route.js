@@ -10,7 +10,7 @@ export default async function handler(req, res) {
     const browser = await puppeteer.launch({ headless: true });
     const page = await browser.newPage();
     
-    let currentViews = 3827;
+    let currentViews = 3840;
 
     try {
         await page.goto(url, { waitUntil: 'networkidle2' });
